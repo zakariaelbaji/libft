@@ -14,6 +14,8 @@ Usage
 
 Testing
 
+
+
 Overview
 Libft is a foundational C library that provides a rich set of utility functions for string, memory, and character operations. Designed to boost productivity and code safety, it offers reusable components that simplify common low-level programming tasks.
 
@@ -30,38 +32,52 @@ Features
 
 🔧 Core Utilities: Essential tools like ft_strlen, ft_atoi, and ft_itoa streamline fundamental data processing and conversions.
 
-Getting Started
+
 Prerequisites
+
 Ensure you have the following installed on your system:
 
 A C Compiler (e.g., gcc, clang)
-
 make (GNU Make)
 
 Installation
+
 To build libft from source, follow these steps:
 
 Clone the repository:
 
 bash
+
 git clone https://github.com/zakariaelbaji/libft
+
 Navigate to the project directory:
 
-bash
-cd libft
-Build the library:
-Simply run make. This will compile the source files and create the libft.a archive file.
 
 bash
+
+cd libft
+
+Build the library:
+
+Simply run make. This will compile the source files and create the libft.a archive file.
+
+
+bash
+
 make
+
 Usage
+
 Once compiled, you can use the library in your projects.
 
 Include the header in your C files:
 
-c
+
+
 #include "libft.h"
+
 Compile your program by linking against the libft.a library:
+
 
 bash
 gcc -Wall -Wextra -Werror your_program.c -L. -lft -o your_program
