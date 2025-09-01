@@ -1,83 +1,83 @@
-Libft
-Table of Contents
-Overview
+# Libft - Your Foundational C Library
 
-Features
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Skills Learned](#skills-learned)
 
-Getting Started
+---
 
-Prerequisites
+## Overview
+Libft is the very first project in the 42 curriculum.  
+The goal is to recreate a simplified version of the standard C library and expand it with additional utility functions that will be reused across future projects.
 
-Installation
+This project strengthens understanding of memory management, string manipulation, and linked list operations while providing a reliable toolbox for future coding challenges.
 
-Usage
+---
 
-Testing
+## Features
+✅ **Reimplemented Standard Functions**  
+- Memory: `memset`, `memcpy`, `memmove`, `calloc`, …  
+- Strings: `strlen`, `strchr`, `strdup`, `strjoin`, …  
+- Character checks: `isalpha`, `isdigit`, `isalnum`, …  
 
+✅ **Extra Utility Functions**  
+- String manipulation: `ft_substr`, `ft_strtrim`, `ft_split`  
+- Conversion: `ft_itoa`  
+- File descriptor output: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`  
 
+### Prerequisites
+Make sure you have:
+- A C compiler (`gcc` or `clang`)  
+- `make` (GNU Make)
 
-Overview
-Libft is a foundational C library that provides a rich set of utility functions for string, memory, and character operations. Designed to boost productivity and code safety, it offers reusable components that simplify common low-level programming tasks.
+---
 
-This project empowers developers to write cleaner, more efficient, and more reliable C code by providing a standardized set of well-tested utilities.
-
-Features
-✅ String Transformation: Functions like ft_strmapi and ft_substr enable flexible, functional-style string modifications and manipulations.
-
-💾 Memory Safety: Utilities such as ft_calloc, ft_bzero, and ft_memmove ensure reliable and safe memory management.
-
-📍 Character Checks: Easy-to-use functions like ft_isalpha, ft_isdigit, and ft_isprint facilitate robust input validation and character handling.
-
-📤 Output Flexibility: Functions like ft_putchar_fd and ft_putstr_fd support versatile data output across different streams (e.g., standard output, file descriptors).
-
-🔧 Core Utilities: Essential tools like ft_strlen, ft_atoi, and ft_itoa streamline fundamental data processing and conversions.
-
-
-Prerequisites
-
-Ensure you have the following installed on your system:
-
-A C Compiler (e.g., gcc, clang)
-make (GNU Make)
-
-Installation
-
-To build libft from source, follow these steps:
-
+### Installation
 Clone the repository:
 
-bash
-
-git clone https://github.com/zakariaelbaji/libft
-
-Navigate to the project directory:
-
-
-bash
-
+```bash
+git clone https://github.com/YOUR_USERNAME/libft
 cd libft
 
-Build the library:
-
-Simply run make. This will compile the source files and create the libft.a archive file.
-
-
-bash
-
 make
+This will compile the source files and generate:
+
+libft.a
 
 Usage
 
-Once compiled, you can use the library in your projects.
-
-Include the header in your C files:
-
-
-
+Include the header in your project:
 #include "libft.h"
 
-Compile your program by linking against the libft.a library:
+Compile your program with libft.a:
 
+gcc main.c libft.a -o test
+./test```
 
-bash
-gcc -Wall -Wextra -Werror your_program.c -L. -lft -o your_program
+Skills Learned
+
+Reimplementing core libc functions from scratch
+
+Low-level memory handling (malloc, pointers, arrays)
+
+Modular design and header files in C
+
+Writing and using Makefiles
+
+Data structure fundamentals with linked lists
+
+```
+### Skills Learned
+
+Reimplementing core libc functions from scratch
+
+Low-level memory handling (malloc, pointers, arrays)
+
+Modular design and header files in C
+
+Writing and using Makefiles
