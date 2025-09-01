@@ -57,19 +57,8 @@ Include the header in your project:
 Compile your program with libft.a:
 
 gcc main.c libft.a -o test
-./test```
+./test
 
-Skills Learned
-
-Reimplementing core libc functions from scratch
-
-Low-level memory handling (malloc, pointers, arrays)
-
-Modular design and header files in C
-
-Writing and using Makefiles
-
-Data structure fundamentals with linked lists
 
 ```
 ### Skills Learned
